@@ -1,0 +1,75 @@
+header {
+    background-color: #ffffff;
+    padding: 10px 0;
+}
+
+
+.caja {
+    display: flex;
+    align-items: center;
+}
+
+#titulo {
+    margin-left: 20px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.naveg {
+    margin-left: 70px;
+}
+
+body {
+    background-size: cover;
+    background-attachment: fixed;
+    border-radius: 10px;
+    background-image: url('imagenes/fondo.jpeg');
+
+}
+
+#body {
+    margin: 6% 15%;
+    padding: 6% 6%;
+    border-radius: 10px;
+    background-color: rgb(127, 197, 230);
+}
+
+main {
+    text-align: justify;
+    text-align: center;
+}
+
+#tablatitle {
+    text-align: center;
+    color: rgb(207, 2, 2);
+}
+
+table {
+    text-align: center;
+    margin: 20px auto;
+}
+
+thead {
+    background: #555555;
+    color: rgb(9, 52, 243);
+    font-weight: bold;
+}
+
+td,
+th {
+    border: 1px solid #000000;
+    background-color: rgb(255, 255, 255);
+    padding: 5px 10px;
+}
+
+
+footer {
+    text-align: center;
+    background: url(imagenes/bg.jpg);
+    padding: 40px;
+}
+
+#Redes h2 {
+    color: white;
+    font-size: 20px;
+}
