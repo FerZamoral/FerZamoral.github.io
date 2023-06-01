@@ -1,0 +1,31 @@
+.body{
+    margin: 6% 15%;
+    padding: 6% 6%;
+    border-radius: 10px;
+    background-color: rgb(90, 87, 87);
+}
+.Titulo{
+    display: flex; justify-content: space-around; 
+}
+.Foto{
+    width:300px;
+    height:300px;
+    border-radius:10px;
+    height: auto;
+    margin: auto;
+    display: block;
+}
+.Informacion{
+    background-color: rgba(248, 248, 248, 0.6);
+    text-align: justify;
+    text-align: center;
+}
+.youtube{
+    text-align: center;
+    margin-top: 100px;
+    text-decoration: wavy;
+}
+.paginas{
+    text-align: justify;
+    text-align: center;
+    font-size: 200%; }
