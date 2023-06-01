@@ -1,0 +1,61 @@
+header h1{
+    font-size: 30px;
+    text-align: center;
+    line-height: 60px;
+}
+body{
+    background-image: url('imagenes/bandera.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    
+}
+.cuerpo h2{
+    text-align: center;
+}
+.cuerpo table{
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    border-collapse: separate;
+    border-spacing: 5px;
+     border-style: double;   
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td, th {
+    background:rgba(255, 255, 255, 0.6) ;
+   
+ }
+ .lista {
+    background-color: rgba(77, 76, 76, 60%);
+    color: black; 
+    text-align: center; 
+    padding: 10px; 
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+   
+ }
+ .lista li {
+    text-align: center;
+    list-style-position: inside;
+  }
+  .lista li a {
+    color: rgb(102, 13, 13);
+   
+}
+ footer {
+    text-align: center;
+    background: url(imagenes/footer.jpg);
+    padding: 40px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-size: 15px;
+}
