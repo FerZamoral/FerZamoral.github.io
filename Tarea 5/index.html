@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sintaxis básica de Javascript</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="ejemplo.js"></script>
+  </head>
+  <body>
+    <h1>Sintaxis básica de Javascript</h1>
+    <nav>
+      <ul>
+        <li>
+          <a href="#control-flujo">Control de flujo y manejo de errores</a>
+        </li>
+        <li><a href="#bucles">Bucles e iteración</a></li>
+        <li><a href="#funciones">Funciones</a></li>
+        <li><a href="#expresiones">Expresiones y operadores</a></li>
+        <li><a href="#numeros-fechas">Números y fechas</a></li>
+        <li><a href="#formateo">Formateo de texto</a></li>
+        <li><a href="#colecciones">Colecciones indexadas</a></li>
+        <li><a href="#dom">DOM</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div class="container1">
+        <h1 id="control-flujo">Control de flujo y manejo de errores</h1>
+        <ul>
+            <ul>
+                <li><strong>if...else:</strong> Estructura que permite tomar decisiones basadas en una condición.</li>
+                <li><strong>switch:</strong> Estructura que evalúa una expresión y ejecuta diferentes bloques de código según su valor.</li>
+                <li><strong>try/catch/throw:</strong> Mecanismo de manejo de errores. El bloque try ejecuta un código, el bloque catch captura y maneja los errores, y throw se utiliza para lanzar errores explícitamente.</li>
+                <li><strong>Objetos Error:</strong> Representan los errores en JavaScript y proporcionan información sobre el error ocurrido.</li>
+              </ul>
+              
+        </ul>
+        <p>Ejemplo</p>
+        <label for="age">Ingresa tu edad:</label>
+        <input type="text" id="age" placeholder="Edad" />
+        <button onclick="verificarEdadHandler()">Verificar</button>
+        <p id="result"></p>
+
+        <script>
+          function verificarEdadHandler() {
+            let age = parseInt(document.getElementById("age").value);
+            let resultElement = document.getElementById("result");
+
+            resultElement.textContent = verificarEdad(age);
+          }
+        </script>
+      </div>
+      <div class="container1">
+        <h1 id="bucles">Bucles e iteración</h1>
+        <ul>
+          <li><strong>for:</strong> Ejecuta un bloque de código un número específico de veces.</li>
+          <li><strong>while:</strong> Ejecuta un bloque de código mientras se cumple una condición.</li>
+          <li><strong>do...while:</strong> Ejecuta un bloque de código al menos una vez y luego verifica una condición.</li>
+        </ul>
+        
+        <h2>Ejemplo con bucle "while"</h2>
+        <p>Los números del 1 al 5 son:  <br> Ejemplo de bucle "while" que imprime los números del 1 al 5</p>
+        <p id="output"></p>
+      </div>
+      <div class="container1">
+        <h1 id ="funciones">Funciones</h1>
+        <ul>
+          <li><strong>Definir funciones:</strong> Permite definir un bloque de código reutilizable.</li>
+          <li><strong>Llamar funciones:</strong> Ejecuta el código contenido en una función en un momento específico.</li>
+        </ul>
+      
+        <h2>Ejemplo de llamada a una función</h2>
+        <button onclick="saludar()">Saludar</button>
+        <p id="saludo"></p>
+      </div>
+      <div class="container1">
+        <h1 id="expresiones">Expresiones y operadores</h1>
+        <ul>
+          <li><strong>Asignación y Comparación:</strong> Permite asignar valores y compararlos para realizar evaluaciones.</li>
+          <li><strong>Operadores aritméticos:</strong> Realizan operaciones matemáticas como suma, resta, multiplicación, etc.</li>
+          <li><strong>Operadores lógicos:</strong> Permiten realizar operaciones lógicas como AND, OR, NOT, etc.</li>
+        </ul>
+    
+        <h2>Ejemplo de uso de operadores</h2>
+        <button onclick="calcularDescuento()">Calcular Descuento</button>
+        <p id="descuento"></p>
+      </div>
+      <div class="container1">
+        <h1 id="numeros-fechas">Números y fechas</h1>
+        <ul>
+          <li><strong>Objeto Number:</strong> Proporciona funcionalidades relacionadas con números.</li>
+          <li><strong>Objeto Math:</strong> Proporciona funcionalidades matemáticas y operaciones avanzadas.</li>
+          <li><strong>Objeto Date:</strong> Permite trabajar con fechas y horas.</li>
+        </ul>
+      
+        <h2>Ejemplo de uso del Objeto Math</h2>
+        <button onclick="calcularRaizCuadrada()">Calcular Raíz Cuadrada</button>
+        <p id="resultado"></p>
+      </div>
+      <div class="container1">
+        <h1 id="formateo">Formateo de texto</h1>
+        <ul>
+          <li><strong>Cadenas literales:</strong> Permite crear cadenas de texto con formato más legible.</li>
+          <li><strong>Objeto String:</strong> Proporciona funcionalidades para trabajar con cadenas de texto.</li>
+        </ul>
+      
+        <h2>Ejemplo de uso de Cadenas literales y Objeto String</h2>
+        <button onclick="formatearTexto()">Formatear Texto</button>
+        <p id="textoFormateado"></p>
+      </div>
+      <div class="container1">
+        <h1 id="colecciones">Colecciones indexadas</h1>
+        <ul>
+          <li><strong>Arreglos:</strong> Permiten almacenar y acceder a varios valores en una sola variable.</li>
+          <li><strong>Arreglos tipados:</strong> Especifican el tipo de datos de los elementos en el arreglo.</li>
+        </ul>
+      
+        <h2>Ejemplo de uso de Arreglos y Arreglos tipados</h2>
+        <button onclick="mostrarArreglo()">Mostrar Arreglo</button>
+        <p id="arreglo"></p>
+      </div>
+      
+      <div class="container1">
+        <h1 id="dom">DOM (Document Object Model)</h1>
+        <ul>
+          <li><strong>Encontrar elementos HTML por ID:</strong> document.getElementById()</li>
+          <li><strong>Encontrar elementos HTML por nombre de etiqueta:</strong> document.getElementsByTagName()</li>
+          <li><strong>Encontrar elementos HTML por nombre de clase:</strong> document.getElementsByClassName()</li>
+          <li><strong>Encontrar elementos HTML mediante selectores CSS:</strong> document.querySelector() y document.querySelectorAll()</li>
+          <li><strong>Encontrar elementos HTML por colecciones de objetos HTML:</strong> document.getElementsByTagName()</li>
+        </ul>
+      
+        <h2>Ejemplo de uso del DOM</h2>
+    <button onclick="encontrarElementoPorId()">Encontrar Elemento por ID</button>
+    <p id="resultado"></p>
+      </div>
+      
+    </main>
+    <script src="ejemplo.js"></script>
+    
+  </body>
+</html>
